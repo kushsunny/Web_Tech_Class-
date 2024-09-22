@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            height: 600px;
+            width: 600px;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: 100px  100px; */
+            /* grid-template-columns: 1fr 1fr 1fr;
+             */
+             grid-template-columns: 100px 100px 100px;
+             grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 100px 100px; */
+            grid-gap: 10px;
+        }
+        .item1{
+            background-color: aqua;
+            /* grid-column: span;
+             */
+             grid-column-start: 1;
+             grid-column-end: 3;
+        }
+        .item2{
+            background-color: aquamarine;
+        }
+        .item3{
+            background-color: antiquewhite;
+        }
+        .item4{
+            background-color: blueviolet;
+        }
+        .item5{
+            background-color: hotpink;
+        }
+        .item6{
+            background-color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item1"> First Div </div>
+    <div class="item2"> Second Div </div>
+    <div class="item3"> Third Div </div>
+    <div class="item4"> Fourth Div </div>
+    <div class="item5"> Five Div </div>
+    <div class="item6"> Six Div </div>
+</div>
+</body>
+</html>
