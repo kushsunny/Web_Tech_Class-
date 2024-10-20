@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="validInfo()">
+        <h2>Credit Card Payment</h2>
+        Name: <input type="text" id="name"> <br><br>
+        Email: <input type="text" id="email"><br><br>
+        cardNumber: <input type="text" id="cardNumber"><br><br>
+        expiryMonth: <input type="text" id="expiryMonth" placeholder="MM"><br><br>
+        expiryYear: <input type="text" id="expiryYear" placeholder="YYYY"><br><br>
+        cvv: <input type="text" id="cvv"><br><br>
+            <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    function validInfo(){
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var cardNumber = document.getElementById("cardNumber").value;
+        var expiryMonth = document.getElementById("expiryMonth").value;
+        var cvv = document.getElementById("cvv").value;
+        var expiryYear = document.getElementById("expiryYear").value;
+        if(name===""){
+            alert("Enter Your Name");
+            return false;
+        }
+
+    if(email==="" || !email.includes("@")){
+        alert("Enter Your correct mail")
+        return false;
+    }
+    if(cardNumber.length!=16 || isNaN(cardNumber)){
+        alert("Enter Your correct cardNumber"); 
+        return false; 
+    }
+    if(expiryMonth==="" || expiryYear===""){
+        alert("Check your expiryMonth");
+        return false; 
+    }
+    if(cvv.length!==3 || isNaN(cvv)){
+        alert("Check Cvv");
+        return false; 
+    }
+    alert("Your Payment Record Save Successfully ")
+    return true; 
+}
+</script>
+</html>

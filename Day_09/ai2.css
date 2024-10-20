@@ -26,7 +26,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    
 }
 
 nav li {
@@ -39,19 +38,11 @@ nav a {
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
     padding: 10px;
 }
 
 .content {
-    width: 70%;
-}
-
-.news {
-    width: 25%;
-    background-color: #f9f9f9;
-    padding: 10px;
+    margin: 10px;
 }
 
 footer {

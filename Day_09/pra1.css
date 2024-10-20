@@ -30,7 +30,12 @@ footer{
     padding: 10px;
 }
 
-.news{
-    text-align: end;
-    padding: 10px;
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
 }
