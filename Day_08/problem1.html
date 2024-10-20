@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter 1st Number <input type="number" id="num1">
+    <br>
+    Enter 2nd Number <input type="number" id="num2">
+    <br>
+    Result = <input type="number">
+    <h3 id="result"></h3>
+
+    <button onclick="add()">Addition</button>
+    <button onclick="Sub()">Subtraction</button>
+    <button onclick="Multiply()">Multiplication</button>
+    <button onclick="divide()">Division</button>
+
+
+    <script>
+        let num1 = document.getElementById("num1")
+        let num2 = document.getElementById("num2")
+        let result = document.getElementById("result")
+
+        function add(){
+            document.getElementById((num1.value)+(num2.value)).innerText="result"
+        }
+    </script>
+</body>
+</html>

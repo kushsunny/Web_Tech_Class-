@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Enter a Number <input type="text" id="text1">
+    <button onclick="evenodd()">Check </button>
+    <p id="result"></p>
+
+
+
+    <script>
+        // let num=prompt("Enter Your Number");
+        function evenodd(){
+            let number = document.getElementById("text1").value
+            if(number % 2==0){
+               document.getElementById("result").innerText="Even"
+            }else{
+                document.getElementById("result").innerText="ODD"
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
